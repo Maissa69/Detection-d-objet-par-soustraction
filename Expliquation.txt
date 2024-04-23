@@ -1,0 +1,20 @@
+# Tutoriel OpenCV
+## Détection d'objet par soustraction
+
+La vidéo du tutoriel est à l'adresse:
+https://www.youtube.com/watch?v=pkzT9MlICPE
+
+
+Detection d'objet par soustraction de mask :
+on peut pas dire que si la difference = 0 car on peut avoir quelle que variation de luminosite 
+abs(I(x, y) - F(x, y)) < seuil
+
+I => image prit par la video 
+F => image de fond extrait sans voiture par calcule de moyenne 
+
+## common.py
+
+ce code contien 2 fonction :
+    1) moyenne_image() : calcule de moyenne de "nbr" premier frame d'une video
+    2) calcul_mask() : return le mask nettoyer 
+ce code est utiliser dans compte.py 
